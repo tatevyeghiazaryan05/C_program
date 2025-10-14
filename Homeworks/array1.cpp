@@ -1,14 +1,11 @@
 #include <iostream>
-#include <ostream>
-
-int cin;
-//
-//
-int main() {
-    int array1[10];
-    std::cout<< "Write array 1 ";
-    std::cout << array1[0] << std::endl;
-    std::cout << array1[1] << std::endl;
-    std::cout << array1[2] << std::endl;
-    std::cout << array1[3] << std::endl;
+int main ()
+{
+    int arr [] = {0, 2, 3, 8, 7, 7, 1, 1, 0, 8, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int result = 0;
+    for (int i = 0; i < n; i ++)
+        result ^= arr[i];
+    std::cout << "Single number is: " << result << std::endl;
+    return 0;
 }
