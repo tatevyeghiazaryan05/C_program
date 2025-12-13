@@ -30,7 +30,7 @@
 #include <iostream>
 using namespace std;
 
-#pragma pack(push, 1)   // Align members on 1-byte boundaries
+#pragma pack(push, 1)
 
 struct B {
     char a;   // 1 byte
@@ -38,7 +38,7 @@ struct B {
     char c;   // 1 byte
 };
 
-#pragma pack(pop)       // Restore default alignment
+#pragma pack(pop)
 
 int main() {
     cout << "Size of struct B: " << sizeof(B) << endl;
